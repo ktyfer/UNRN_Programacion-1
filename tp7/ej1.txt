@@ -1,0 +1,12 @@
+1. ¿Porque es importante validar los datos que ingresa un usuario?
+Para que el codigo se ejecute correctamente y evitar problemas de ciertos tipos de datos
+
+2. ¿Que hace strip y en que se diferencia de split?
+el strip elimina caracteres vacios o invisibles solo al final o al principio  
+el split convierte una cadena de texto a una lista con un separador
+
+3. ¿Para que puede servir count cuando una linea tiene datos separados por comas o por punto y coma?
+para saber la cantidad de datos con la que estamos trabajando y asi separarlos por columnas
+
+4. ¿Que problema pueden traer los espacios de mas al principio o al final de un dato?
+los problemas pueden traer son que un conjunto de palabras esten todos juntos y que no hayan saltos de linea 

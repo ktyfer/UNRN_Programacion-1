@@ -1,0 +1,18 @@
+Pedir una edad por teclado. Antes de usarla como numero, revisar que el dato tenga sentido.
+
+El programa tiene que aceptar edades numericas entre 0 y 120. Si la persona escribe espacios de mas, el programa deberia poder limpiarlos antes de validar.
+
+Si el dato sirve, mostrar algo como:
+
+Edad registrada: 25
+
+Si no sirve, mostrar un mensaje de error claro. No alcanza con que el programa se rompa.
+
+edad = input("ingrese su edad")
+
+if edad.isnumeric():
+    edad_1 = int(edad)
+    if edad_1 >= 0 and edad_1 <= 120:
+        print(f"Edad registrada: {edad}")
+    else:
+        print("Error: la edad debe estar entre 0 y 120.")

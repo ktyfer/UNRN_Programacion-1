@@ -1,0 +1,33 @@
+Pedir al usuario un codigo de materia con este formato:
+
+PROG-101
+
+El programa tiene que validar que:
+
+    tenga un solo guion -;
+    la parte de la izquierda tenga solo letras;
+    la parte de la derecha tenga solo numeros.
+
+Si el codigo es valido, mostrarlo normalizado en mayusculas (metodo upper).
+
+Ejemplo:
+
+Codigo valido: PROG-101
+
+Si no es valido, mostrar un mensaje de error claro.
+
+
+codigo = input("Ingrese codigo de materia: ")
+
+if codigo.count("-") == 1:
+    partes = codigo.split("-")
+
+    izquierda = partes[0]
+    derecha = partes[1]
+    if izquierda.isalpha() and derecha.isnumeric():
+        codigo_1 = codigo.upper()
+        print(f"Codigo valido: {codigo_1}")
+    else:
+        print("El codigo debe tener letras y luego numeros.")
+else:
+    print("El codigo debe tener un solo guion.")
